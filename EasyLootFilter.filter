@@ -1,0 +1,63 @@
+﻿#=================================
+# Summarum's Easy Loot Filter	 #
+#=================================
+# Author:				Summarum
+# Filter's Version:		0.1
+#
+#Filter won't hide any loot, it will however highlight more interesting stuff
+
+#Uniques
+Show
+Rarity Unique
+PlayAlertSound 1 300
+SetTextColor 163 53 238 255
+SetBorderColor 163 53 238 255
+SetBackgroundColor 20 20 0 255
+PlayEffect Purple
+MinimapIcon 1 Purple Star
+SetFontSize 45
+
+
+# Top tier currency
+Show
+Class "Currency"
+BaseType "Divine" "Perfect Jeweller's Orb" "Mirror"
+SetTextColor 255 128 0 255
+SetBorderColor 255 128 0 255
+SetBackgroundColor 255 255 255 255
+PlayAlertSound 6 300
+PlayEffect Red
+MinimapIcon 0 Red Star
+SetFontSize 45
+
+# Gold tier crafting currency
+Show
+Class "Currency"
+BaseType "Exalted Orb" "Orb of Alchemy" "Chaos Orb" "Vaal Orb" "Lesser Jeweller's Orb" "Regal Orb"
+SetTextColor 0 112 221 255
+SetBorderColor 0 112 221 255
+SetBackgroundColor 20 20 0 255
+PlayAlertSound 6 300
+PlayEffect Blue
+MinimapIcon 1 Blue Kite
+SetFontSize 40
+
+# Gems
+Show
+BaseType "Uncut Spirit Gem" "Uncut Support Gem" "Uncut Skill Gem"
+SetTextColor 150 150 150 255
+SetBorderColor 0 0 0 255
+SetBackgroundColor 20 20 0 180
+PlayAlertSound 2 300
+PlayEffect Cyan
+MinimapIcon 1 Cyan Triangle
+SetFontSize 32
+
+# Blue items
+Show
+Rarity == Magic
+Class == "Amulets" "Belts" "Body Armours" "Boots" "Bows" "Gloves" "Helmets" "One Hand Maces" "Quivers" "Rings" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands"
+SetBorderColor 0 0 0 0
+SetBackgroundColor 20 20 0 0
+DisableDropSound True
+SetFontSize 18
