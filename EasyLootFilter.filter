@@ -21,7 +21,7 @@ SetFontSize 45
 # Top tier currency
 Show
 Class "Currency"
-BaseType "Divine" "Perfect Jeweller's Orb" "Mirror"
+BaseType "Divine" "Perfect Jeweller's Orb" "Mirror" "Greater Jeweller's Orb" "Orb of Chance" "Orb of Annulment"
 SetTextColor 255 128 0 255
 SetBorderColor 255 128 0 255
 SetBackgroundColor 255 255 255 255
@@ -33,7 +33,7 @@ SetFontSize 45
 # Gold tier crafting currency
 Show
 Class "Currency"
-BaseType "Exalted Orb" "Orb of Alchemy" "Chaos Orb" "Vaal Orb" "Lesser Jeweller's Orb" "Regal Orb"
+BaseType "Exalted Orb" "Orb of Alchemy" "Chaos Orb" "Vaal Orb" "Lesser Jeweller's Orb" "Regal Orb" "Glassblower's Bauble" "Gemcutter's Prism" "Artificer's Orb"
 SetTextColor 0 112 221 255
 SetBorderColor 0 112 221 255
 SetBackgroundColor 20 20 0 255
@@ -41,6 +41,35 @@ PlayAlertSound 6 300
 PlayEffect Blue
 MinimapIcon 1 Blue Kite
 SetFontSize 40
+
+Show
+Class "Currency"
+BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Transmutation" "Orb of Augmentation" "Chance Shard" "Regal Shard"
+SetTextColor 220 0 0
+SetFontSize 35
+
+Show
+Class "Currency"
+BaseType "Simulacrum Splinter" "Breach Splinter" " Artifact" 
+SetTextColor 255 128 0 255
+SetBorderColor 255 128 0 255
+SetBackgroundColor 20 20 0 255
+PlayAlertSound 1 300
+PlayEffect Orange
+MinimapIcon 0 Orange Star
+SetFontSize 40
+
+# Keys
+Show
+BaseType "Bronze Key" "Silver Key" "Gold Key"
+SetTextColor 0 112 221 255
+SetBorderColor 0 112 221 255
+SetBackgroundColor 20 20 0 255
+PlayAlertSound 2 300
+PlayEffect Blue
+MinimapIcon 1 Blue Kite
+SetFontSize 40
+
 
 # Gems
 Show
@@ -60,4 +89,4 @@ Class == "Amulets" "Belts" "Body Armours" "Boots" "Bows" "Gloves" "Helmets" "One
 SetBorderColor 0 0 0 0
 SetBackgroundColor 20 20 0 0
 DisableDropSound True
-SetFontSize 18
+SetFontSize 20
