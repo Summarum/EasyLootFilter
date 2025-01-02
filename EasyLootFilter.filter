@@ -48,6 +48,7 @@ BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of
 SetTextColor 220 0 0
 SetFontSize 35
 
+# Leagues
 Show
 Class "Currency"
 BaseType "Simulacrum Splinter" "Breach Splinter" " Artifact" 
@@ -70,6 +71,37 @@ PlayEffect Blue
 MinimapIcon 1 Blue Kite
 SetFontSize 40
 
+# Tablets
+Show
+Class "Tablet"
+SetTextColor 255 128 0 255
+SetBorderColor 255 128 0 255
+SetBackgroundColor 20 20 0 255
+PlayAlertSound 1 300
+PlayEffect Orange
+MinimapIcon 0 Orange Star
+SetFontSize 45
+
+# Ascendancy
+Show
+BaseType "Ultimatum" "Barya" 
+SetTextColor 30 235 0 255
+SetBorderColor 0 0 0 255
+SetBackgroundColor 20 20 0 255
+PlayEffect Green
+MinimapIcon 2 Green Kite
+SetFontSize 40
+
+# Maps
+Show
+BaseType "Waystone"
+SetTextColor 255 0 255 255
+SetBorderColor 255 0 255 255
+SetBackgroundColor 100 0 100 255
+PlayAlertSound 3 300
+PlayEffect Pink
+MinimapIcon 0 Pink Circle
+SetFontSize 45
 
 # Gems
 Show
