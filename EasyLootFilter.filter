@@ -10,7 +10,7 @@
 Show
 Rarity Unique
 PlayAlertSound 1 300
-SetTextColor 163 53 238 255
+SetTextColor 230 204 128 255
 SetBorderColor 163 53 238 255
 SetBackgroundColor 20 20 0 255
 PlayEffect Purple
@@ -24,7 +24,7 @@ Class "Currency"
 BaseType "Divine" "Perfect Jeweller's Orb" "Mirror" "Greater Jeweller's Orb" "Orb of Chance" "Orb of Annulment"
 SetTextColor 255 128 0 255
 SetBorderColor 255 128 0 255
-SetBackgroundColor 255 255 255 255
+SetBackgroundColor 255 128 0 255
 PlayAlertSound 6 300
 PlayEffect Red
 MinimapIcon 0 Red Star
@@ -36,17 +36,11 @@ Class "Currency"
 BaseType "Exalted Orb" "Orb of Alchemy" "Chaos Orb" "Vaal Orb" "Lesser Jeweller's Orb" "Regal Orb" "Glassblower's Bauble" "Gemcutter's Prism" "Artificer's Orb"
 SetTextColor 0 112 221 255
 SetBorderColor 0 112 221 255
-SetBackgroundColor 20 20 0 255
+SetBackgroundColor 163 53 238 255
 PlayAlertSound 6 300
 PlayEffect Blue
 MinimapIcon 1 Blue Kite
 SetFontSize 40
-
-Show
-Class "Currency"
-BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Transmutation" "Orb of Augmentation" "Chance Shard" "Regal Shard"
-SetTextColor 220 0 0
-SetFontSize 35
 
 # Leagues
 Show
@@ -54,16 +48,27 @@ Class "Currency"
 BaseType "Simulacrum Splinter" "Breach Splinter" " Artifact" 
 SetTextColor 255 128 0 255
 SetBorderColor 255 128 0 255
-SetBackgroundColor 20 20 0 255
+SetBackgroundColor 0 112 221 255
 PlayAlertSound 1 300
 PlayEffect Orange
 MinimapIcon 0 Orange Star
 SetFontSize 40
 
+
+#other currency
+Show
+Class "Currency"
+BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Transmutation" "Orb of Augmentation" "Chance Shard" "Regal Shard"
+SetBorderColor 0 112 221 255
+SetTextColor 0 112 221
+SetFontSize 35
+
+
+
 # Keys
 Show
 BaseType "Bronze Key" "Silver Key" "Gold Key"
-SetTextColor 0 112 221 255
+SetTextColor 30 255 0 255
 SetBorderColor 0 112 221 255
 SetBackgroundColor 20 20 0 255
 PlayAlertSound 2 300
@@ -76,7 +81,7 @@ Show
 Class "Tablet"
 SetTextColor 255 128 0 255
 SetBorderColor 255 128 0 255
-SetBackgroundColor 20 20 0 255
+SetBackgroundColor 30 255 0 255
 PlayAlertSound 1 300
 PlayEffect Orange
 MinimapIcon 0 Orange Star
@@ -85,8 +90,8 @@ SetFontSize 45
 # Ascendancy
 Show
 BaseType "Ultimatum" "Barya" 
-SetTextColor 30 235 0 255
-SetBorderColor 0 0 0 255
+SetTextColor 0 112 221 255
+SetBorderColor 30 255 0 255
 SetBackgroundColor 20 20 0 255
 PlayEffect Green
 MinimapIcon 2 Green Kite
@@ -96,19 +101,19 @@ SetFontSize 40
 Show
 BaseType "Waystone"
 SetTextColor 255 0 255 255
-SetBorderColor 255 0 255 255
-SetBackgroundColor 100 0 100 255
+SetBorderColor 0 0 0 255
+SetBackgroundColor 0 204 255 255
 PlayAlertSound 3 300
 PlayEffect Pink
 MinimapIcon 0 Pink Circle
-SetFontSize 45
+SetFontSize 40
 
 # Gems
 Show
 BaseType "Uncut Spirit Gem" "Uncut Support Gem" "Uncut Skill Gem"
 SetTextColor 150 150 150 255
 SetBorderColor 0 0 0 255
-SetBackgroundColor 20 20 0 180
+SetBackgroundColor 0 112 221
 PlayAlertSound 2 300
 PlayEffect Cyan
 MinimapIcon 1 Cyan Triangle
@@ -118,7 +123,8 @@ SetFontSize 32
 Show
 Rarity == Magic
 Class == "Amulets" "Belts" "Body Armours" "Boots" "Bows" "Gloves" "Helmets" "One Hand Maces" "Quivers" "Rings" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands"
-SetBorderColor 0 0 0 0
+SetBorderColor 255 255 255
+SetTextColor 255 255 255 255
 SetBackgroundColor 20 20 0 0
 DisableDropSound True
 SetFontSize 20
@@ -126,30 +132,31 @@ SetFontSize 20
 # Rare items
 Show
 Rarity Rare
+SetBackgroundColor 30 255 0
 SetFontSize 35
 
 # Sockets 
 Show
 Sockets > 0
 Rarity Normal
-SetBorderColor 200 200 200
+SetBorderColor 157 157 157
 SetFontSize 35
 
 Show
 Sockets > 0
 Rarity Magic
-SetBorderColor 0 0 200
+SetBorderColor 157 157 157
 SetFontSize 35
 
 # Quality
 Show
 Quality > 0
 Rarity Normal
-SetBorderColor 200 200 200
+SetBorderColor 157 157 157
 SetFontSize 35
 
 Show
 Quality > 0
 Rarity Magic
-SetBorderColor 0 0 200
+SetBorderColor 157 157 157
 SetFontSize 35
