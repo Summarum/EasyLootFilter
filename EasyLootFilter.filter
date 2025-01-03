@@ -121,6 +121,7 @@ SetFontSize 32
 
 # Blue items
 Show
+Sockets == 0
 Rarity == Magic
 Class == "Amulets" "Belts" "Body Armours" "Boots" "Bows" "Gloves" "Helmets" "One Hand Maces" "Quivers" "Rings" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands"
 SetBorderColor 255 255 255
@@ -141,12 +142,14 @@ SetFontSize 35
 Show
 Sockets > 0
 Rarity Normal
+SetBackgroundColor 157 157 157 100
 SetBorderColor 157 157 157
 SetFontSize 35
 
 Show
 Sockets > 0
 Rarity Magic
+SetBackgroundColor 157 157 157 100
 SetBorderColor 157 157 157
 SetFontSize 35
 
