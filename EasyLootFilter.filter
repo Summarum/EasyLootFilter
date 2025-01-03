@@ -122,3 +122,34 @@ SetBorderColor 0 0 0 0
 SetBackgroundColor 20 20 0 0
 DisableDropSound True
 SetFontSize 20
+
+# Rare items
+Show
+Rarity Rare
+SetFontSize 35
+
+# Sockets 
+Show
+Sockets > 0
+Rarity Normal
+SetBorderColor 200 200 200
+SetFontSize 35
+
+Show
+Sockets > 0
+Rarity Magic
+SetBorderColor 0 0 200
+SetFontSize 35
+
+# Quality
+Show
+Quality > 0
+Rarity Normal
+SetBorderColor 200 200 200
+SetFontSize 35
+
+Show
+Quality > 0
+Rarity Magic
+SetBorderColor 0 0 200
+SetFontSize 35
