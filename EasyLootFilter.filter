@@ -2,7 +2,7 @@
 # Summarum's Easy Loot Filter	 #
 #=================================
 # Author:				Summarum
-# Filter's Version:		0.1
+# Filter's Version:		0.2
 #
 #Filter won't hide any loot, it will however highlight more interesting stuff
 
@@ -10,11 +10,11 @@
 Show
 Rarity Unique
 PlayAlertSound 1 300
-SetTextColor 230 204 128 255
-SetBorderColor 163 53 238 255
-SetBackgroundColor 20 20 0 255
-PlayEffect Purple
-MinimapIcon 1 Purple Star
+SetTextColor 255 128 0 255
+SetBorderColor 255 128 0 255
+SetBackgroundColor 40 20 0 255
+PlayEffect Orange
+MinimapIcon 0 Orange Star
 SetFontSize 45
 
 
@@ -22,9 +22,9 @@ SetFontSize 45
 Show
 Class "Currency"
 BaseType "Divine" "Perfect Jeweller's Orb" "Mirror" "Greater Jeweller's Orb" "Orb of Chance" "Orb of Annulment"
-SetTextColor 255 128 0 255
-SetBorderColor 255 128 0 255
-SetBackgroundColor 255 128 0 255
+SetTextColor 163 53 238 255
+SetBorderColor 163 53 238 255
+SetBackgroundColor 230 204 128 255
 PlayAlertSound 6 300
 PlayEffect Red
 MinimapIcon 0 Red Star
@@ -38,20 +38,20 @@ SetTextColor 0 0 0 255
 SetBorderColor 0 112 221 255
 SetBackgroundColor 163 53 238 255
 PlayAlertSound 6 300
-PlayEffect Blue
-MinimapIcon 1 Blue Kite
+PlayEffect Purpple
+MinimapIcon 1 Purple Kite
 SetFontSize 40
 
 # Leagues
 Show
 Class "Currency"
 BaseType "Simulacrum Splinter" "Breach Splinter" " Artifact" 
-SetTextColor 255 128 0 255
-SetBorderColor 255 128 0 255
-SetBackgroundColor 0 112 221 255
+SetTextColor 0 112 221 255
+SetBorderColor 0 112 221 255
+SetBackgroundColor 255 255 255 255
 PlayAlertSound 1 300
-PlayEffect Orange
-MinimapIcon 0 Orange Star
+PlayEffect Blue
+MinimapIcon 0 Blue Star
 SetFontSize 40
 
 
@@ -59,8 +59,8 @@ SetFontSize 40
 Show
 Class "Currency"
 BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Transmutation" "Orb of Augmentation" "Chance Shard" "Regal Shard"
-SetBorderColor 0 112 221 255
-SetTextColor 0 112 221
+SetBorderColor 30 255 0 255
+SetTextColor 30 255 0
 SetFontSize 35
 
 
@@ -68,9 +68,9 @@ SetFontSize 35
 # Keys
 Show
 BaseType "Bronze Key" "Silver Key" "Gold Key"
-SetTextColor 30 255 0 255
-SetBorderColor 0 112 221 255
-SetBackgroundColor 20 20 0 255
+SetTextColor 157 157 157 255
+SetBorderColor 255 255 255 255
+SetBackgroundColor 0 204 255 255
 PlayAlertSound 2 300
 PlayEffect Blue
 MinimapIcon 1 Blue Kite
@@ -79,12 +79,12 @@ SetFontSize 40
 # Tablets
 Show
 Class "Tablet"
-SetTextColor 255 128 0 255
-SetBorderColor 255 128 0 255
+SetTextColor 0 204 255 255
+SetBorderColor 0 204 255 255
 SetBackgroundColor 30 255 0 255
 PlayAlertSound 1 300
-PlayEffect Orange
-MinimapIcon 0 Orange Star
+PlayEffect Cyan
+MinimapIcon 0 Cyan Star
 SetFontSize 45
 
 # Ascendancy
