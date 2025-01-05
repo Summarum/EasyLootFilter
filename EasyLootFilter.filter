@@ -6,6 +6,15 @@
 #
 #Filter won't hide any loot, it will however highlight more interesting stuff
 
+#Poor (Gray): RGB(157 157 157)
+#Common (White): RGB(255 255 255)
+#Uncommon (Green): RGB(30 255 0)
+#Rare (Blue): RGB(0 112 221)
+#Epic (Purple): RGB(163 53 238)
+#Legendary (Orange): RGB(255 128 0)
+#Artifact (Gold): RGB(230 204 128)
+#Heirloom (Light Blue): RGB(0 204 255)
+
 #Uniques
 Show
 Rarity Unique
@@ -38,7 +47,7 @@ SetTextColor 0 0 0 255
 SetBorderColor 0 112 221 255
 SetBackgroundColor 163 53 238 255
 PlayAlertSound 6 300
-PlayEffect Purpple
+PlayEffect Purple
 MinimapIcon 1 Purple Kite
 SetFontSize 40
 
