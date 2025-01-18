@@ -6,16 +6,25 @@
 #
 #Filter won't hide any loot, it will however highlight more interesting stuff
 
-#Poor (Gray): RGB(157 157 157)
-#Common (White): RGB(255 255 255)
-#Uncommon (Green): RGB(30 255 0)
-#Rare (Blue): RGB(0 112 221)
-#Epic (Purple): RGB(163 53 238)
-#Legendary (Orange): RGB(255 128 0)
-#Artifact (Gold): RGB(230 204 128)
-#Heirloom (Light Blue): RGB(0 204 255)
+#=================================
+#Item grading by rarity:
+#Normal = no border
+#Magic = green border
+#Rare = blue border
 
-#Uniques
+#Magic items
+Show
+Rarity Magic
+SetBorderColor 30 255 0
+SetFontSize 30
+
+#Rare items
+Show
+Rarity Rare
+SetBorderColor 0 112 221
+SetFontSize 35
+
+#Unique items
 Show
 Rarity Unique
 PlayAlertSound 1 300
@@ -25,6 +34,112 @@ SetBackgroundColor 40 20 0 255
 PlayEffect Orange
 MinimapIcon 0 Orange Star
 SetFontSize 45
+
+#=================================
+#Item grading by sockets:
+#gray-ish background for items with sockets
+#borders as with  normal/magic/rare items above
+
+#Normal with sockets 
+Show
+Sockets > 0
+Rarity Normal
+SetBackgroundColor 157 157 157 100
+SetBorderColor 157 157 157
+SetFontSize 35
+
+#Magic with sockets
+Show
+Sockets > 0
+Rarity Magic
+SetBackgroundColor 157 157 157 100
+SetBorderColor 30 255 0
+SetFontSize 35
+
+#Rare with sockets
+Show
+Sockets > 0
+Rarity Rare
+SetBackgroundColor 157 157 157 100
+SetBorderColor 0 112 221
+SetFontSize 35
+
+#=================================
+#Item grading by quality:
+#gray-ish background for items with quality
+#borders as with  normal/magic/rare items above
+#light blue font color
+
+#Normal with quality 
+Show
+Quality > 0
+Rarity Normal
+SetTextColor 0 204 255 255
+SetBackgroundColor 157 157 157 100
+SetBorderColor 157 157 157
+SetFontSize 35
+
+#Magic with quality
+Show
+Quality > 0
+Rarity Magic
+SetTextColor 0 204 255 255
+SetBackgroundColor 157 157 157 100
+SetBorderColor 30 255 0
+SetFontSize 35
+
+#Rare with quality
+Show
+Quality > 0
+Rarity Rare
+SetTextColor 0 204 255 255
+SetBackgroundColor 157 157 157 100
+SetBorderColor 0 112 221
+SetFontSize 35
+
+#=================================
+#currencies
+
+#low tier currency - green background
+Show
+Class "Currency"
+BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Transmutation" "Orb of Augmentation" "Chance Shard" "Regal Shard"
+SetBackgroundColor 30 255 0
+SetFontSize 35
+
+#gold tier currency - green background + purple border
+Show
+Class "Currency"
+BaseType "Exalted Orb" "Orb of Alchemy" "Chaos Orb" "Vaal Orb" "Lesser Jeweller's Orb" "Regal Orb" "Glassblower's Bauble" "Gemcutter's Prism" "Artificer's Orb"
+SetTextColor 163 53 238 255
+SetBorderColor 163 53 238 255
+SetBackgroundColor 30 255 0
+PlayAlertSound 6 300
+MinimapIcon 1 Purple Kite
+PlayEffect Purple
+SetFontSize 40
+
+#league stuff - green background + blue border
+Show
+Class "Currency"
+BaseType "Simulacrum Splinter" "Breach Splinter" " Artifact" 
+SetTextColor 0 204 255 255
+SetBorderColor 0 204 255 255
+SetBackgroundColor 30 255 0 255
+PlayAlertSound 1 300
+PlayEffect Blue
+MinimapIcon 0 Blue Star
+
+# Keys
+Show
+BaseType "Bronze Key" "Silver Key" "Gold Key"
+SetTextColor 157 157 157 255
+SetBorderColor 157 157 157 255
+SetBackgroundColor 30 255 0 255
+PlayAlertSound 2 300
+PlayEffect Blue
+MinimapIcon 1 Blue Kite
+SetFontSize 40
 
 
 # Top tier currency
@@ -39,138 +154,48 @@ PlayEffect Red
 MinimapIcon 0 Red Star
 SetFontSize 45
 
-# Gold tier crafting currency
-Show
-Class "Currency"
-BaseType "Exalted Orb" "Orb of Alchemy" "Chaos Orb" "Vaal Orb" "Lesser Jeweller's Orb" "Regal Orb" "Glassblower's Bauble" "Gemcutter's Prism" "Artificer's Orb"
-SetTextColor 0 0 0 255
-SetBorderColor 0 112 221 255
-SetBackgroundColor 163 53 238 255
-PlayAlertSound 6 300
-PlayEffect Purple
-MinimapIcon 1 Purple Kite
-SetFontSize 40
+#=================================
+#tablets & maps
 
-# Leagues
-Show
-Class "Currency"
-BaseType "Simulacrum Splinter" "Breach Splinter" " Artifact" 
-SetTextColor 0 112 221 255
-SetBorderColor 0 112 221 255
-SetBackgroundColor 255 255 255 255
-PlayAlertSound 1 300
-PlayEffect Blue
-MinimapIcon 0 Blue Star
-SetFontSize 40
-
-
-#other currency
-Show
-Class "Currency"
-BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Transmutation" "Orb of Augmentation" "Chance Shard" "Regal Shard"
-SetBorderColor 30 255 0 255
-SetTextColor 30 255 0
-SetFontSize 35
-
-
-
-# Keys
-Show
-BaseType "Bronze Key" "Silver Key" "Gold Key"
-SetTextColor 157 157 157 255
-SetBorderColor 255 255 255 255
-SetBackgroundColor 0 204 255 255
-PlayAlertSound 2 300
-PlayEffect Blue
-MinimapIcon 1 Blue Kite
-SetFontSize 40
-
-# Tablets
+#tablets
 Show
 Class "Tablet"
-SetTextColor 0 204 255 255
-SetBorderColor 0 204 255 255
-SetBackgroundColor 30 255 0 255
+SetTextColor 230 204 128 255
+SetBorderColor 230 204 128 255
+SetBackgroundColor 163 53 238 255
 PlayAlertSound 1 300
 PlayEffect Cyan
 MinimapIcon 0 Cyan Star
 SetFontSize 45
 
-# Ascendancy
-Show
-BaseType "Ultimatum" "Barya" 
-SetTextColor 0 112 221 255
-SetBorderColor 30 255 0 255
-SetBackgroundColor 20 20 0 255
-PlayEffect Green
-MinimapIcon 2 Green Kite
-SetFontSize 40
-
 # Maps
 Show
 BaseType "Waystone"
-SetTextColor 0 0 0 255
-SetBorderColor 0 0 0 255
-SetBackgroundColor 0 204 255 255
+SetTextColor 30 255 0 255
+SetBorderColor 30 255 0 255
+SetBackgroundColor 163 53 238 255
 PlayAlertSound 3 300
 PlayEffect Pink
 MinimapIcon 0 Pink Circle
 SetFontSize 40
 
+# Ascendancy
+Show
+BaseType "Ultimatum" "Barya" 
+SetTextColor 157 157 157 255
+SetBorderColor 157 157 157 255
+SetBackgroundColor 0 204 255 255
+PlayEffect Green
+MinimapIcon 2 Green Kite
+SetFontSize 40
+
 # Gems
 Show
 BaseType "Uncut Spirit Gem" "Uncut Support Gem" "Uncut Skill Gem"
-SetTextColor 0 0 0 255
-SetBorderColor 0 0 0 255
-SetBackgroundColor 0 112 221
+SetTextColor 230 204 128 255
+SetBorderColor 255 255 255 255
+SetBackgroundColor 0 204 255
 PlayAlertSound 2 300
 PlayEffect Cyan
 MinimapIcon 1 Cyan Triangle
 SetFontSize 32
-
-# Blue items
-Show
-Sockets == 0
-Rarity == Magic
-Class == "Amulets" "Belts" "Body Armours" "Boots" "Bows" "Gloves" "Helmets" "One Hand Maces" "Quivers" "Rings" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands"
-SetBorderColor 255 255 255
-SetTextColor 255 255 255 255
-SetBackgroundColor 20 20 0 0
-DisableDropSound True
-SetFontSize 20
-
-# Rare items
-Show
-Rarity Rare
-SetTextColor 0 0 0 255
-SetBorderColor 0 0 0 255
-SetBackgroundColor 30 255 0 150
-SetFontSize 35
-
-# Sockets 
-Show
-Sockets > 0
-Rarity Normal
-SetBackgroundColor 157 157 157 100
-SetBorderColor 157 157 157
-SetFontSize 35
-
-Show
-Sockets > 0
-Rarity Magic
-SetBackgroundColor 157 157 157 100
-SetBorderColor 157 157 157
-SetFontSize 35
-
-# Quality
-Show
-Quality > 0
-Rarity Normal
-SetBorderColor 157 157 157
-SetFontSize 35
-
-Show
-Quality > 0
-Rarity Magic
-SetBorderColor 157 157 157
-SetFontSize 35
